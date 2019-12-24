@@ -5,27 +5,21 @@
  */
 class FooCorporation{
 
-    private static double minimumBaseWage = 8.00;
-    private static int maximumHours = 60;
-    private static int regularHours = 40;
+    private static final double MINIMUM_BASE_WAGE = 8.00;
+    private static final int MAXIMUM_HOURS = 60;
+    private static final int REGULAR_HOURS = 40;
 
     private static void calculateEmployeePay(double baseWage, int hoursWorked){
-        if(baseWage < minimumBaseWage){
-            System.out.println("Base wage is less than minimum base wage");
-            return;
-        }
-
-        if(hoursWorked > maximumHours){
-            System.out.println("Hours worked greater than elligible maximum hours");
-            return;
-        } 
-
-        if(hoursWorked > regularHours){
-            double overtimeHours = hoursWorked - regularHours;
+        if (baseWage < MINIMUM_BASE_WAGE){
+            System.out.println("Base wage is less than minimum base wage.");
+        } else if (hoursWorked > MAXIMUM_HOURS){
+            System.out.println("Hours worked is greater than elligible maximum hours.");
+        } else {
+            double overtimeHours = hoursWorked - REGULAR_HOURS;
             double overtimePay = overtimeHours * (1.5 * baseWage);
-            double basePay = regularHours * baseWage;
+            double basePay = REGULAR_HOURS * baseWage;
             double totalPay = overtimePay + basePay;
-            System.out.println(totalPay);
+            System.out.println("Employee Pay: " + totalPay);
         }
     } 
 
