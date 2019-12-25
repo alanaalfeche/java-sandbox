@@ -4,8 +4,11 @@ import java.util.Arrays;
  * QuickSort Algorithm falls in the divide and conquer category. 
  * Divide full set into two multiple subsets and use recursion to sort each subset.
  * 
- * Best, Average: O(n lgn)
+ * Best, Average: O(n lgn) because comparison is done on a subset 
  * Worst: O(n^2)
+ * 
+ * Resources : https://www.youtube.com/watch?v=ZHVk2blR45Q
+ *           : https://www.interviewbit.com/tutorial/quicksort-algorithm/
  */
 class QuickSort{
 
@@ -17,16 +20,19 @@ class QuickSort{
             if (input[j] <= pivot) {
                 minIndex++;
 
+                // needs more clarification in this block..
                 int temp = input[minIndex];
                 input[minIndex] = input[j];
                 input[j] = temp;
             }
         }
 
+        // swapping pivot and highest number 
         int temp = input[minIndex + 1];
         input[minIndex + 1] = input[high];
         input[high] = temp;
 
+        // returning partition index
         return minIndex + 1;
     }
 
