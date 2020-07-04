@@ -9,4 +9,7 @@ My implementations of sorting algorithms
 
 3. JHU.605.620/
 Algorithms for Bioinformatics: https://ep.jhu.edu/programs-and-courses/605.620-algorithms-for-bioinformatics
+
+4. advent_of_code/2019
+My attempts to AOC 2019: https://adventofcode.com/2019
 ```
