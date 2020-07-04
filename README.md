@@ -1,6 +1,4 @@
-<h2> My introduction to programming </h2>
-
-My non-CS background has become a barrier in my advancement as a developer. I have the experience but I do not have a strong understanding of the basic principles of any programming language. I want to be better so I am taking courses and reading books hoping that I can evolve to someone who writes beautiful code.
+<h2> My sandbox to java  programming </h2>
 
 <h4> Java </h4> 
 
